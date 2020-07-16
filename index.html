@@ -19,7 +19,7 @@
 
         <input type="checkbox" >
 
-        <div class="test" :class="{'bg-success': test, 'bg-danger': !test}">
+        <div class="test" :class="{'bg-success': test, 'bg-danger': !test}" v-model>
             <p>{{ message }}</p>
         </div>
             <button @click="close" @dblclick="open">Fermer</button>
