@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://semantic/dist/semantic.min.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <!--v-bind défini une valeur a un attribut qui est défini dans le JS mais on peut raccourcir juste avec ":"-->
+        <a :href="link" :title="message">{{ message }}</a>
+
+        <ul>
+            <li v-for="prenom in liste">{{ prenom }}</li>
+        </ul>
+
+        <i class=""></i>
+
+        <div class="test message" v-if="test">
+            <p>Ok!</p>
+        </div>
+        <button v-on:click="close">Fermer</button>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
