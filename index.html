@@ -10,16 +10,16 @@
 
     <div id="app">
         <!--v-bind défini une valeur a un attribut qui est défini dans le JS mais on peut raccourcir juste avec ":"-->
-        <a :href="link" :title="message">{{ message }}</a>
+        <a :href="link" :title="message"></a>
 
         <ul>
             <li v-for="prenom in liste">{{ prenom }}</li>
         </ul>
 
-        <i class=""></i>
+        <input type="checkbox" v-model="test">
 
         <div class="test message" v-if="test">
-            <p>Ok!</p>
+            <p>{{ message }}</p>
         </div>
         <button @click="close">Fermer</button>
     </div>
