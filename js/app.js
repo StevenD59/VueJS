@@ -14,8 +14,10 @@ new Vue({
     //Method qui permet au clique du bouton de faire disparaitre le message
     methods: {
         close: function (){
-            this.message = "À bientot !"
             this.test = false
+        },
+        open: function(){
+            this.test = true
         }
     }
 })
