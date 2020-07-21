@@ -6,9 +6,13 @@ let vm = new Vue({
     },
     //Lorsque que l'élement est monté
     mounted: function (){
-        setInterval(() => {
+        this.$interval = setInterval(() => {
+            console.log('Test')
             this.seconds++
         }, 1000);
+    },
+    destroyed: function(){
+        clearInterval(this.$interval)
     }
 })
     
