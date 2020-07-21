@@ -14,8 +14,7 @@ new Vue({
     //Method qui permet au clique du bouton de faire disparaitre le message
     methods: {
         close: function (){
-            this.message = 'Bye, World !'
-            this.test = false
+            this.liste.push('Papa')
         },
         open: function(){
             this.test = true

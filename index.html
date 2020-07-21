@@ -17,9 +17,11 @@
             <li v-for="prenom in liste">{{ prenom }}</li>
         </ul>
 
-        <input type="checkbox" >
+        {{ liste }}
 
-        <div class="test" :class="{'bg-success': test, 'bg-danger': !test}" v-model>
+        
+
+        <div class="test" :class="{'bg-success': test, 'bg-danger': !test}">
             <p>{{ message }}</p>
         </div>
             <button @click="close" @dblclick="open">Fermer</button>
